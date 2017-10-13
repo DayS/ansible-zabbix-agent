@@ -1,7 +1,7 @@
 ---
 
 galaxy_info:
-  author: Maxim Nazarenko
+  author: Damien Villeneuve
   description: Zabbix agent
   license: license (MIT)
   min_ansible_version: 1.9

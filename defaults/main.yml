@@ -1,3 +1,54 @@
 ---
 
-zabbix_agent_port: 10050
+##### General
+zabbix_pid_file: /var/run/zabbix/zabbix_agentd.pid
+zabbix_log_type: file
+zabbix_log_file: /var/log/zabbix/zabbix_agentd.log
+
+zabbix_log_file_size: 0
+zabbix_debug_level: 2
+
+zabbix_sourceip: 
+zabbix_enable_remote_commands: 0
+zabbix_log_remote_commands: 0
+
+##### Passive checks related
+zabbix_servers: 
+zabbix_listen_port: 10050
+zabbix_listen_ip: 0.0.0.0
+zabbix_start_agents: 3
+
+##### Active checks related
+zabbix_server_active: 
+zabbix_hostname: 
+zabbix_hostname_item: system.hostname
+zabbix_host_metadata: 
+zabbix_host_metadata_item: 
+zabbix_refresh_active_checks: 120
+zabbix_buffer_send: 5
+zabbix_buffer_size: 100
+zabbix_max_lines_per_second: 20
+
+##### Advanced parameters
+zabbix_alias: 
+zabbix_timeout: 3
+zabbix_allow_root: 0
+zabbix_user: zabbix
+
+##### User-defined parameters
+zabbix_unsafe_user_parameters: 0
+zabbix_user_parameter: 
+zabbix_load_module_path: ${libdir}/modules
+zabbix_load_module: 
+
+##### TSL-defined parameters
+zabbix_tls_connect: unencrypted
+zabbix_tls_accept: unencrypted
+zabbix_tls_ca_file: 
+zabbix_tls_crl_file: 
+zabbix_tls_server_cert_issuer: 
+zabbix_tls_server_cert_subject: 
+zabbix_tls_cert_file: 
+zabbix_tls_key_file: 
+zabbix_tls_psk_identity: 
+zabbix_tls_psk_file: 
